@@ -4,9 +4,7 @@
   "description": "Real time node socket angular app",
   "main": "server.js",
   "dependencies": {
-    "http-status": "^0.1.1",
-    "socket.io": "^0.9.16",
-    "url": "^0.7.9"
+        "socket.io": "^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
