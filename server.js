@@ -8,12 +8,7 @@ server = http.createServer(function(req, res){
     var path = url.parse(req.url).pathname;
     switch (path){
         case '/':
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            res.write('<h1>Hello! Try the <a href="/test.html">Test page</a></h1>');
-            res.end();
-            break;
-		case '/angulartableRT.html':
-            fs.readFile(__dirname + path, function(err, data){
+            fs.readFile(__dirname + "/test.html", function(err, data){
                 if (err){ 
                     return send404(res);
                 }
@@ -66,15 +61,7 @@ server = http.createServer(function(req, res){
                 res.write(data, 'utf8');
                 res.end();
             });					
-		case '/test.html':
-            fs.readFile(__dirname + path, function(err, data){
-                if (err){ 
-                    return send404(res);
-                }
-                res.writeHead(200, {'Content-Type': path == 'json.js' ? 'text/javascript' : 'text/html'});
-                res.write(data, 'utf8');
-                res.end();
-            });
+
 		case '/stocks.json':
             fs.readFile(__dirname + path, function(err, data){
                 if (err){ 
@@ -94,7 +81,7 @@ send404 = function(res){
     res.write('404');
     res.end();
 };
-
+console.log("server running at localhost:8001");
 server.listen(8001);
 var msgWrite = '';
 

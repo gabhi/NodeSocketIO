@@ -1,0 +1,36 @@
+{
+  "name": "NodeSocketIO",
+  "version": "0.0.0",
+  "description": "Real time node socket angular app",
+  "main": "server.js",
+  "dependencies": {
+    "http-status": "^0.1.1",
+    "socket.io": "^0.9.16",
+    "url": "^0.7.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabhi/NodeSocketIO.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "socket.io",
+    "angular",
+    "js",
+    "real",
+    "time",
+    "data"
+  ],
+  "author": "Abhijit Gaikwad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabhi/NodeSocketIO/issues"
+  },
+  "homepage": "https://github.com/gabhi/NodeSocketIO"
+}

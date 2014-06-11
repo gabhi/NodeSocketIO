@@ -23,3 +23,6 @@ app.factory('socket', function($rootScope) {
 		}
 	};
 });
+
+
+
